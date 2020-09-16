@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
             System.out.println(maximum);
         }
     }
-}*/
+}*/ //first try
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
