@@ -13,10 +13,7 @@ public class Solution {
         //напишите тут ваш код
         ArrayList<String> strings = new ArrayList<String>(10);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int minLength = 0;
-        int maxLength = 0;
-        int minIndex = 0;
-        int maxIndex = 0;
+        int minLength = 0, maxLength = 0, minIndex = 0, maxIndex = 0;
 
         for (int i = 0; i < 10; i++) {
             strings.add(reader.readLine());
