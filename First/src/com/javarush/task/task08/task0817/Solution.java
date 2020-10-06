@@ -27,9 +27,9 @@ public class Solution {
         //напишите тут ваш код
         Map<String, String> copy = new HashMap<>(map);
         List<String> tmpName = new LinkedList<>(); //list for duplicate names
-        for (var value : copy.values()) {  //double loop for finding duplicates
+        for (String value : copy.values()) {  //double loop for finding duplicates
             int count = 0; //duplicate counter, I don't fckng know how to do it without it
-            for (var name : map.values()) {
+            for (String name : map.values()) {
                 if (value.equals(name)) {
                     count++;
                     if (count > 1) {
@@ -39,7 +39,7 @@ public class Solution {
                 }
             }
         }
-        for (var name : tmpName) {
+        for (String name : tmpName) {
             removeItemFromMapByValue(map, name); //according to the task, we MUST use this method
         }
     }
@@ -54,18 +54,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        /*
-        Map<String, String> map = createMap();
-        System.out.println("Before clean duplicates");
-        for (var val : map.values()) {
-            System.out.println(val);
-        }
-        removeTheFirstNameDuplicates(map);
-        System.out.println("After");
-        for (var val : map.values()) {
-            System.out.println(val);
-        }
-        */ //use it for check
 
     }
 }
